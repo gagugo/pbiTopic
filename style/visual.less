@@ -1,0 +1,71 @@
+@import (less) "style/abbvoice.less";
+
+@abb-red: #ff000f;
+@abb-black: #000000;
+
+
+@font-face {
+    font-family: 'ABBvoice Bold';
+        src: url('@{abbvoice-bold-eot}');
+        src: url('@{abbvoice-bold-eot}?#iefix') format('embedded-opentype'),
+            url('@{abbvoice-bold-woff2}') format('woff2'),
+            url('@{abbvoice-bold-woff}') format('woff'),
+}
+
+@font-face {
+    font-family: 'ABBvoice Light';
+        src: url('@{abbvoice-light-eot}');
+        src: url('@{abbvoice-light-eot}?#iefix') format('embedded-opentype'),
+            url('@{abbvoice-light-woff2}') format('woff2'),
+            url('@{abbvoice-light-woff}') format('woff'),
+}
+
+* {
+   cursor: default;
+   //cursor: url('/cursor/phone.svg'), auto;
+   //cursor: data-uri([svg],'/cursor/phone');
+   //cursor:url('../cursor/test.cur');
+
+}
+
+p {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    color: @abb-black;
+}
+
+#main-container {
+    width: inherit;
+
+    #classification-container {
+        float: right;
+    }
+
+    #topic-container {
+        overflow: hidden;
+        
+    }
+}
+
+#dash,
+#topic,
+#classification{
+    font-family: 'ABBvoice Bold', Arial, sans-serif;
+}
+
+#subtopic {
+    font-family: 'ABBvoice Light', Arial, sans-serif;
+}
+
+#classification{
+    color: @abb-red;
+}
+
+#dash:before {
+    content: "\2014";
+    font-size: inherit;
+    color: @abb-red;
+    display: block;
+}

@@ -1,0 +1,111 @@
+{
+    "objects": {
+        "topicSettings": {
+            "displayName": "Dashboard topic",
+            "properties": {
+                "topic": {
+                    "displayName": "Topic",
+                    "description": "Text that will appear as the topic in a bold font.",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "padding":{
+                    "displayName":"Padding",
+                    "type": {
+                        "numeric":true
+                    }
+                },
+                "topicColor":{
+                    "displayName":"Font color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+                "subtopicColor":{
+                    "displayName":"Font color",
+                    "type": {
+                        "fill": {
+                            "solid": {
+                                "color": true
+                            }
+                        }
+                    }
+                },
+
+
+                "subtopic": {
+                    "displayName": "Subtopic",
+                    "description": "Text that will appear as the subtopic in a regular font.",
+                    "type": {
+                        "text": true
+                    }
+                },
+                "fontTopicSize": {
+                    "displayName": "Font size",
+                    "description": "Font size in px (pixels)",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "fontSubtopicSize": {
+                    "displayName": "Font size",
+                    "description": "Font size in px (pixels)",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "fontTopicFamily": {
+                    "displayName": "Topic Font family",
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "fontSubtopicFamily": {
+                    "displayName": "Subopic Font family",
+                    "type": {
+                        "formatting": {
+                            "fontFamily": true
+                        }
+                    }
+                },
+                "classification": {
+                    "displayName": "Data classification",
+                    "description": "Adds a notice informing about the document's classification",
+                    "type": {
+                        "enumeration": [
+                            {
+                                "displayName": "Public",
+                                "value": "Public"
+                            },
+                            {
+                                "displayName": "Internal",
+                                "value": "Internal"
+                            },
+                            {
+                                "displayName": "Confidential",
+                                "value": "Confidential"
+                            },
+                            {
+                                "displayName": "Strictly confidential",
+                                "value": "Strictly confidential"
+                            },
+                            {
+                                "displayName": "<blank>",
+                                "value": "<blank>"
+                            }
+                        ]
+                    }
+                }
+
+            }
+            
+        }
+    }
+}
